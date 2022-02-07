@@ -1,0 +1,58 @@
+
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias inf='~/AndroidStudioProjects/project/2021_12/infosiss_trucking && n'
+alias fp='~/AndroidStudioProjects/project/ && clear'
+alias n=nvim
+alias ll='ls -lah'
+alias so='source ~/.zshrc'
+alias sot='tmux source ~/.tmux.conf'
+
+# Github
+alias gs='git status'
+alias gm='git commit '
+alias gpm='git push -u origin master'
+alias gpod='git push develop'
+alias gcod='git checkout develop'
+alias gcom='git checkout master'
+alias gmd='git checkout develop'
+alias gmm='git checkout master'
+alias tm='tmate'
+
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias s='scrcpy -Sw --window-x 1000' 
+
+#laravel
+alias pa='php artisan'
+alias pas='php artisan serve'
+alias pamc='php artisan make:component'
+alias pamct='php artisan make:controller'
+alias paml='php artisan make:livewire'
+alias pams='php artisan make:seed'
+alias pamm='php artisan make:model '
+alias lp='~/Documents/dev/php/laravel/ && clear'
