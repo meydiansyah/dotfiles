@@ -31,7 +31,7 @@ set noshowmode
 set noswapfile
 set novisualbell
 set nowrap
-set number relativenumber
+" set number relativenumber
 set path+=**
 set re=1
 set rtp+=/usr/local/opt/fzf

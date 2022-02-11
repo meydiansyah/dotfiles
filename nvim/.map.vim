@@ -2,50 +2,50 @@ let mapleader = ","
 nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 
 "" Floaterm
-	nnoremap <silent> <leader><UP>		:FloatermToggle<CR>
-	tnoremap <silent> <leader><UP>		<C-\><C-n>:FloatermToggle<CR>
-	nnoremap <silent> <leader><DOWN>	:FloatermNew<CR>
-	tnoremap <silent> <leader><DOWN>	<C-\><C-n>:FloatermNew<CR>
-	nnoremap <silent> <leader><LEFT>	:FloatermPrev<CR>
-	tnoremap <silent> <leader><LEFT>	<C-\><C-n>:FloatermPrev<CR>
-	nnoremap <silent> <leader><RIGHT>	:FloatermNext<CR>
-	tnoremap <silent> <leader><RIGHT>	<C-\><C-n>:FloatermNext<CR>
-o
+	" nnoremap <silent> <leader><UP>		:FloatermToggle<CR>
+	" tnoremap <silent> <leader><UP>		<C-\><C-n>:FloatermToggle<CR>
+	" nnoremap <silent> <leader><DOWN>	:FloatermNew<CR>
+	" tnoremap <silent> <leader><DOWN>	<C-\><C-n>:FloatermNew<CR>
+	" nnoremap <silent> <leader><LEFT>	:FloatermPrev<CR>
+	" tnoremap <silent> <leader><LEFT>	<C-\><C-n>:FloatermPrev<CR>
+	" nnoremap <silent> <leader><RIGHT>	:FloatermNext<CR>
+	" tnoremap <silent> <leader><RIGHT>	<C-\><C-n>:FloatermNext<CR>
+
 "" Buffers
-	nnoremap <silent> <leader>, :Buffers<CR>
-	tmap <leader>, :Buffers<CR>
-	nnoremap <silent> <A-f> :BLines<CR>
-	nnoremap <silent> <A-F> :Files<CR>
-	nmap <leader>c :Bclose<CR>
-	tmap <leader>c exit<CR>
-	noremap <leader>q :q<CR>
-	nnoremap <leader>Q :qa!<CR>
-	nnoremap <leader>e :bn<CR>
-	nnoremap <leader>q :bp<CR>
+	nnoremap <silent> <leader>;			:Buffers<CR>
+	tmap <leader>;						:Buffers<CR>
+	nnoremap <silent> <A-/>				:BLines<CR>
+	nnoremap <silent> <A-f>				:Files<CR>
+	nmap <leader>c						:Bclose<CR>
+	tmap <leader>c						exit<CR>
+	noremap <leader>q					:q<CR>
+	nnoremap <leader>Q					:qa!<CR>
+	nnoremap <leader>e					:bn<CR>
+	nnoremap <leader>q					:bp<CR>
 
 "" Laravel keymap
-	nnoremap <leader>pas :Start <CR>
-	nnoremap <leader>pc :Artisan make:controller 
-	nnoremap <leader>pcom :Artisan make:component 
-	nnoremap <leader>tenv :Eenv <CR>
+	nnoremap <leader>pas				:Start <CR>
+	nnoremap <leader>pc					:Artisan make:controller 
+	nnoremap <leader>pcom				:Artisan make:component 
+	nnoremap <leader>tenv				:Eenv <CR>
 
 "" Flutter keymap"
-	xmap <leader>a  <Plug>(coc-codeaction-selected) <bar> h
-	nmap <leader>,a  <Plug>(coc-range-select) 
-	nmap <leader>a  <Plug>(coc-codeaction-selected) <bar> h
-	nmap <leader>4 :FlutterSplit <CR>
+	xmap <leader>a						<Plug>(coc-codeaction-selected) <bar> h
+	nmap <leader>,a						<Plug>(coc-range-select) 
+	nmap <leader>a						<Plug>(coc-codeaction-selected) <bar> h
+	nmap <leader>4						:FlutterSplit <CR>
 	
 	" Coc
-	nmap <silent> gd <Plug>(coc-definition)
-	nmap <silent> gy <Plug>(coc-type-definition)
-	nmap <silent> gi <Plug>(coc-implementation)
-	nmap <silent> gr <Plug>(coc-references)
+	nmap <silent> gd					<Plug>(coc-definition)
+	nmap <silent> gy					<Plug>(coc-type-definition)
+	nmap <silent> gi					<Plug>(coc-implementation)
+	nmap <silent> gr					<Plug>(coc-references)
 
 	" Symbol renaming.
-	nmap <leader>rn <Plug>(coc-rename)
+	nmap <leader>rn						<Plug>(coc-rename)
 
 	" Use K to show documentation in preview window
-	nnoremap <silent> <leader><CR> :call <SID>show_documentation()<CR>
+	nnoremap <silent> <leader><CR>		:call <SID>show_documentation()<CR>
 	function! s:show_documentation()
 	  if (index(['vim','help'], &filetype) >= 0)
 		execute 'h '.expand('<cword>')
@@ -69,10 +69,10 @@ o
 	inoremap {;<CR> {<CR>};<ESC>O
 
 "" Switching windows
-	noremap <leader>j <C-w>j
-	noremap <leader>k <C-w>k
-	noremap <leader><Tab> <C-w>l
-	noremap <leader><S-Tab> <C-w>h
+	noremap <leader>j					<C-w>j
+	noremap <leader>k					<C-w>k
+	noremap <leader><Tab>				<C-w>l
+	noremap <leader><S-Tab>				<C-w>h
 
 "" Movement
 	nnoremap <A-l> e
@@ -96,8 +96,8 @@ o
 	map <A-H> 5zh
 
 "" Nerdtree toggle
-	nnoremap <silent><A-b> :NERDTreeToggle<CR>
-	nnoremap <silent><esc> :noh<cr><esc>
+	nnoremap <silent><A-b>				:NERDTreeToggle<CR>
+	nnoremap <silent><esc>				:noh<cr><esc>
 
 "" Copy paste
 	noremap YY "+y<CR>
@@ -117,9 +117,9 @@ o
 
 
 "" Vim editor
-	nnoremap <leader>q" ciw""<Esc>P
-	nnoremap <leader>q' ciw''<Esc>P
-	nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
+	nnoremap <leader>" ciw""<Esc>P
+	nnoremap <leader>' ciw''<Esc>P
+	nnoremap <Leader>d' daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 
 	nnoremap <A-d> YP
 	nnoremap <leader>t :tabe <CR>
@@ -155,14 +155,14 @@ o
 	map <A-Tab> <C-Y>,
 
 	" Find files using Telescope command-line sugar.
-	nnoremap <leader>ff <cmd>Telescope find_files<cr>
-	nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-	nnoremap <leader>fb <cmd>Telescope buffers<cr>
-	nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+	" nnoremap <leader>ff <cmd>Telescope find_files<cr>
+	" nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+	" nnoremap <leader>fb <cmd>Telescope buffers<cr>
+	" nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 "" Delete command
-	nnoremap <leader>d "_d
 	xnoremap <leader>d "_d
+	nnoremap <leader>d "_d
 	xnoremap <leader>p "_dP
 
 "" RG command

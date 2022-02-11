@@ -51,6 +51,7 @@ alias rmd='sudo rm -r '
 
 # tmux
 alias t='tmux'
+alias tn='tmux new -s'
 alias tks='tmux kill-session -t'
 alias tas='tmux attach-session -t'
 

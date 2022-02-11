@@ -7,7 +7,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'natebosch/vim-lsc-dart'
 "" }}}
 
-" #Larave Plugins {{{
+" #Laravel Plugins {{{
 	Plug 'tpope/vim-dispatch'             "| Optional
 	Plug 'tpope/vim-projectionist'        "|
 	Plug 'noahfrederick/vim-composer'     "|
@@ -18,13 +18,11 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'preservim/nerdtree'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'terryma/vim-multiple-cursors'
-	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	Plug 'arcticicestudio/nord-vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'mhinz/vim-startify'
-	Plug 'voldikss/vim-floaterm'
 	Plug 'tomtom/tcomment_vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'rbgrouleff/bclose.vim'
@@ -38,6 +36,12 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'mattn/emmet-vim'
 
 	Plug 'psliwka/vim-smoothie'
+
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+
 " }}}
 
 " #Removed Plugins {{{

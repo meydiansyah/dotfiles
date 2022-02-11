@@ -40,6 +40,7 @@ let g:coc_snippet_next = '<TAB>'
 let g:coc_snippet_prev = '<S-TAB>'
 
 let g:NERDTreeGitStatusWithFlags = 1
+let NERDTreeShowHidden=1
 let g:dartfmt_options = ['--fix', '--line-length 120']
 
 
