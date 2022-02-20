@@ -5,6 +5,9 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'thosakwe/vim-flutter'
 	Plug 'natebosch/vim-lsc'
 	Plug 'natebosch/vim-lsc-dart'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'dart-lang/dart-vim-plugin'
+	Plug 'Neevash/awesome-flutter-snippets'
 "" }}}
 
 " #Laravel Plugins {{{
@@ -13,22 +16,34 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'noahfrederick/vim-composer'     "|
 	Plug 'noahfrederick/vim-laravel'
 " }}}
+"
+" # React {{{
+	Plug 'pangloss/vim-javascript'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'SirVer/ultisnips'
+	Plug 'mlaursen/vim-react-snippets'
+	Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+" }}}
+
 
 " #Interface Plugins {{{
-	Plug 'preservim/nerdtree'
+	Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 	Plug 'terryma/vim-multiple-cursors'
-	Plug 'arcticicestudio/nord-vim'
+
+	" Theme
+	Plug 'edkolev/tmuxline.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'mhinz/vim-startify'
 	Plug 'tomtom/tcomment_vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'rbgrouleff/bclose.vim'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'dart-lang/dart-vim-plugin'
-	Plug 'nvim-lua/plenary.nvim'
 
 	Plug 'leafOfTree/vim-vue-plugin'
 
@@ -42,13 +57,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 
+	Plug 'folke/which-key.nvim'
 " }}}
 
-" #Removed Plugins {{{
-	"Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-	"Plug 'dart-lang/dart-vim-plugin'
-	"Plug 'dracula/vim'
-	"Plug 'torta/flutter-lazy.vim'
-	"Plug 'KabbAmine/vCoolor.vim'
-" }}}
 call plug#end()

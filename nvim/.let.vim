@@ -4,10 +4,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline_powerline_fonts = 1
 let g:lsc_auto_map = v:true
-" let g:material_terminal_italics = 1
-" let g:material_theme_style = 'ocean'
 
-let g:user_emmet_install_global = 0
 let g:smoothie_experimental_mappings = v:true
 
 let g:user_emmet_settings = {
@@ -31,7 +28,11 @@ let g:user_emmet_settings = {
 \  },
 \}
 
+" status line
+let g:tmuxline_theme = 'airline'
+let g:airline_theme = 'luna'
 
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Flutter setting
 let g:dart_format_on_save = 1
@@ -96,3 +97,10 @@ function! OnChangeVueSyntax(syntax)
   endif
 endfunction
 
+let g:indentLine_enabled = 0
+let g:prettier#autoformat = 0
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat_config_present = 1
+let g:prettier#autoformat_require_pragma = 0
+
+let g:vim_jsx_pretty_colorful_config = 1 " default 0

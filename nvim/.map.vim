@@ -12,21 +12,18 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	" tnoremap <silent> <leader><RIGHT>	<C-\><C-n>:FloatermNext<CR>
 
 "" Buffers
-	nnoremap <silent> <leader>;			:Buffers<CR>
-	tmap <leader>;						:Buffers<CR>
+	nnoremap <silent> <space><space>	:Buffers<CR>
+	tmap <space><space>					:Buffers<CR>
 	nnoremap <silent> <A-/>				:BLines<CR>
 	nnoremap <silent> <A-f>				:Files<CR>
-	nmap <leader>c						:Bclose<CR>
+	nmap <leader>w						:Bclose<CR>
 	tmap <leader>c						exit<CR>
-	noremap <leader>q					:q<CR>
+	" noremap <leader>q					:q<CR>
 	nnoremap <leader>Q					:qa!<CR>
 	nnoremap <leader>e					:bn<CR>
 	nnoremap <leader>q					:bp<CR>
 
-"" Laravel keymap
-	nnoremap <leader>pas				:Start <CR>
-	nnoremap <leader>pc					:Artisan make:controller 
-	nnoremap <leader>pcom				:Artisan make:component 
+"" Laravel
 	nnoremap <leader>tenv				:Eenv <CR>
 
 "" Flutter keymap"
@@ -88,7 +85,7 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	inoremap <A-L> <S-Right>
 	inoremap <A-H> <S-Left>
 	inoremap <A-BS> <C-W>
-
+	
 "" Scroll 
 	map K <C-D>
 	map J <C-U>
@@ -105,23 +102,38 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 
 	" redo
 	noremap <a-u> <c-R>
+	
+"" GitGutter
+	nmap ghs <Plug>(GitGutterStageHunk)
+	nmap ghu <Plug>(GitGutterUndoHunk)
+
+	" preview change
+	nmap ghp <Plug>(GitGutterPreviewHunk)
+	" move change
+	nmap gk [c
+	nmap gj ]c
 
 "" Save File
 	nmap <a-s> :w<CR>
 	imap <a-s> <Esc>:w<CR>
 
-
 	map <C-a> <esc>ggVG
-	nmap <leader>w :close<CR>
+	nmap <leader>c :close<CR>
 	noremap <C-m> z
 
 
 "" Vim editor
+	" word -> 'word' 
 	nnoremap <leader>" ciw""<Esc>P
 	nnoremap <leader>' ciw''<Esc>P
-	nnoremap <Leader>d' daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 
+	" 'word' -> word 
+	nnoremap <Leader>d' diW"=substitute(@@,"'\\\|\"","","g")<CR>P
+
+	" duplicate line
 	nnoremap <A-d> YP
+
+	" new tab
 	nnoremap <leader>t :tabe <CR>
 	nnoremap <leader>tv :vsp <CR>
 
@@ -154,6 +166,8 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 
 	map <A-Tab> <C-Y>,
 
+	nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+
 	" Find files using Telescope command-line sugar.
 	" nnoremap <leader>ff <cmd>Telescope find_files<cr>
 	" nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -180,4 +194,3 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 
 "" Set working directory
 	nnoremap <leader>/ :cd %:p:h<CR>
-

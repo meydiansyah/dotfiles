@@ -9,9 +9,6 @@ if exists('g:loaded_webdevicons')
     call webdevicons#refresh()
 endif
 
-colorscheme nord
-" colorscheme material
-
 filetype plugin indent on
 
 hi! Normal guibg=NONE ctermbg=NONE
@@ -20,7 +17,7 @@ hi! VertSplit ctermbg=NONE guibg=NONE
 
 autocmd BufWinLeave,FocusLost,WinLeave * silent :up
 
-" autocmd Filetype coc-explorer let g:indentLine_enabled = 0
-autocmd Filetype json let g:indentLine_enabled = 0
+autocmd FileType json syntax match Comment +\/\/.\+$+
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 autocmd FileType html,css,php EmmetInstall

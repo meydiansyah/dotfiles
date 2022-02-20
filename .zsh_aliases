@@ -7,6 +7,7 @@
 alias eal='n ~/dotfiles/.zsh_aliases'
 alias exp='n ~/dotfiles/.zsh_export'
 alias n=nvim
+alias h8='cd /Library/WebServer/Documents/hacktiv8/ && clear'
 
 #--- Source --------------------------------------------------------------------------
 
