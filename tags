@@ -1,0 +1,156 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+"	nvim/.map.vim	/^	inoremap " ""<left>$/;"	m
+'	nvim/.map.vim	/^	inoremap ' ''<left>$/;"	m
+(	nvim/.map.vim	/^	inoremap ( ()<left>$/;"	m
+,fr	nvim/.map.vim	/^	nnoremap ,fr :FlutterRun <CR>$/;"	m
+<	nvim/.map.vim	/^	inoremap < <><left>$/;"	m
+<A-/>	nvim/.map.vim	/^	nnoremap <silent> <A-\/> :BLines<CR>$/;"	m
+<A-BS>	nvim/.map.vim	/^	inoremap <A-BS> <C-W>$/;"	m
+<A-H>	nvim/.map.vim	/^	inoremap <A-H> <S-Left>$/;"	m
+<A-H>	nvim/.map.vim	/^	map <A-H> 5zh$/;"	m
+<A-L>	nvim/.map.vim	/^	inoremap <A-L> <S-Right>$/;"	m
+<A-L>	nvim/.map.vim	/^	map <A-L> 5zl$/;"	m
+<A-T>	nvim/.map.vim	/^	nnoremap <A-T> :tabe <CR>$/;"	m
+<A-Tab>	nvim/.map.vim	/^	inoremap <silent><expr> <A-Tab> coc#refresh()$/;"	m
+<A-Tab>	nvim/.map.vim	/^	map <A-Tab> <C-Y>,$/;"	m
+<A-b>				:NERDTreeToggle<CR>	nvim/.map.vim	/^	nnoremap <silent><A-b>				:NERDTreeToggle<CR>$/;"	m
+<A-d>	nvim/.map.vim	/^	nnoremap <A-d> YP$/;"	m
+<A-f>	nvim/.map.vim	/^	nnoremap <silent> <A-f> :Files<CR>$/;"	m
+<A-h>	nvim/.map.vim	/^	inoremap <A-h> <Left>$/;"	m
+<A-h>	nvim/.map.vim	/^	nnoremap <A-h> :sp <CR>$/;"	m
+<A-h>	nvim/.map.vim	/^	nnoremap <A-h> b$/;"	m
+<A-j>	nvim/.map.vim	/^	inoremap <A-j> <Down>$/;"	m
+<A-k>	nvim/.map.vim	/^	inoremap <A-k> <Up>$/;"	m
+<A-l>	nvim/.map.vim	/^	inoremap <A-l> <Right>$/;"	m
+<A-l>	nvim/.map.vim	/^	nnoremap <A-l> e$/;"	m
+<A-v>	nvim/.map.vim	/^	nnoremap <A-v> :vsp <CR>$/;"	m
+<C-a>	nvim/.map.vim	/^	map <C-a> <esc>ggVG$/;"	m
+<C-c>	nvim/.map.vim	/^		vmap <C-c> :w !pbcopy<CR><CR>$/;"	m
+<C-g>	nvim/.map.vim	/^	nnoremap <C-g> :Rg<CR>$/;"	m
+<C-m>	nvim/.map.vim	/^	noremap <C-m> z$/;"	m
+<C-x>	nvim/.map.vim	/^		vmap <C-x> :!pbcopy<CR>$/;"	m
+<Leader>d'	nvim/.map.vim	/^	nnoremap <Leader>d' diW"=substitute(@@,"'\\\\\\|\\"","","g")<CR>P$/;"	m
+<Tab>	nvim/.map.vim	/^nmap <Tab> <Plug>(coc-snippets-expand)$/;"	m
+<a-s>	nvim/.map.vim	/^	imap <a-s> <Esc>:w<CR>$/;"	m
+<a-s>	nvim/.map.vim	/^	nmap <a-s> :w<CR>$/;"	m
+<a-u>	nvim/.map.vim	/^	noremap <a-u> <c-R>$/;"	m
+<c-@>	nvim/.let.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-space>	nvim/.let.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<esc>				:noh<cr><esc>	nvim/.map.vim	/^	nnoremap <silent><esc>				:noh<cr><esc>$/;"	m
+<leader>"	nvim/.map.vim	/^	nnoremap <leader>" ciw""<Esc>P$/;"	m
+<leader>'	nvim/.map.vim	/^	nnoremap <leader>' ciw''<Esc>P$/;"	m
+<leader>,s	nvim/.map.vim	/^	nnoremap <leader>,s :Startify <CR>$/;"	m
+<leader>,so	nvim/.map.vim	/^	nnoremap <leader>,so :source ~\/dotfiles\/nvim\/.vimrc <CR>$/;"	m
+<leader>/	nvim/.map.vim	/^	nnoremap <leader>\/ :cd %:p:h<CR>$/;"	m
+<leader>4	nvim/.map.vim	/^	nmap <leader>4 :FlutterSplit <CR>$/;"	m
+<leader><CR>		:call	nvim/.map.vim	/^	nnoremap <silent> <leader><CR>		:call <SID>show_documentation()<CR>$/;"	m
+<leader><S-Tab>				<C-w>h	nvim/.map.vim	/^	noremap <leader><S-Tab>				<C-w>h$/;"	m
+<leader><Tab>				<C-w>l	nvim/.map.vim	/^	noremap <leader><Tab>				<C-w>l$/;"	m
+<leader>Q	nvim/.map.vim	/^	nnoremap <leader>Q :qa!<CR>$/;"	m
+<leader>a	nvim/.map.vim	/^	nmap <leader>a <Plug>(coc-codeaction-selected) <bar> h$/;"	m
+<leader>c	nvim/.map.vim	/^	nmap <leader>c :close<CR>$/;"	m
+<leader>d	nvim/.map.vim	/^	nnoremap <leader>d "_d$/;"	m
+<leader>e	nvim/.map.vim	/^	nnoremap <leader>e :bn<CR>$/;"	m
+<leader>hlet	nvim/.map.vim	/^	nnoremap <leader>hlet :vsp ~\/dotfiles\/nvim\/.let.vim <CR>$/;"	m
+<leader>hmap	nvim/.map.vim	/^	nnoremap <leader>hmap :vsp ~\/dotfiles\/nvim\/.map.vim <CR>$/;"	m
+<leader>hplug	nvim/.map.vim	/^	nnoremap <leader>hplug :vsp ~\/dotfiles\/nvim\/.plug.vim <CR>$/;"	m
+<leader>hset	nvim/.map.vim	/^	nnoremap <leader>hset :vsp ~\/dotfiles\/nvim\/.set.vim <CR>$/;"	m
+<leader>hvim	nvim/.map.vim	/^	nnoremap <leader>hvim :vsp ~\/dotfiles\/nvim\/.vimrc <CR>$/;"	m
+<leader>i	nvim/.map.vim	/^nnoremap <leader>i :source $HOME\/.config\/nvim\/init.vim \\| PlugInstall<CR>$/;"	m
+<leader>j					<C-w>j	nvim/.map.vim	/^	noremap <leader>j					<C-w>j$/;"	m
+<leader>k					<C-w>k	nvim/.map.vim	/^	noremap <leader>k					<C-w>k$/;"	m
+<leader>q	nvim/.map.vim	/^	nnoremap <leader>q :bp<CR>$/;"	m
+<leader>rn	nvim/.map.vim	/^	nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>tenv	nvim/.map.vim	/^	nnoremap <leader>tenv :Eenv <CR>$/;"	m
+<leader>tlet	nvim/.map.vim	/^	nnoremap <leader>tlet :e ~\/dotfiles\/nvim\/.let.vim <CR>$/;"	m
+<leader>tmap	nvim/.map.vim	/^	nnoremap <leader>tmap :e ~\/dotfiles\/nvim\/.map.vim <CR>$/;"	m
+<leader>tplug	nvim/.map.vim	/^	nnoremap <leader>tplug :e ~\/dotfiles\/nvim\/.plug.vim <CR>$/;"	m
+<leader>tset	nvim/.map.vim	/^	nnoremap <leader>tset :e ~\/dotfiles\/nvim\/.set.vim <CR>$/;"	m
+<leader>tvim	nvim/.map.vim	/^	nnoremap <leader>tvim :e ~\/dotfiles\/nvim\/.vimrc <CR>$/;"	m
+<leader>vlet	nvim/.map.vim	/^	nnoremap <leader>vlet :split ~\/dotfiles\/nvim\/.let.vim <CR>$/;"	m
+<leader>vmap	nvim/.map.vim	/^	nnoremap <leader>vmap :split ~\/dotfiles\/nvim\/.map.vim <CR>$/;"	m
+<leader>vplug	nvim/.map.vim	/^	nnoremap <leader>vplug :split ~\/dotfiles\/nvim\/.plug.vim <CR>$/;"	m
+<leader>vset	nvim/.map.vim	/^	nnoremap <leader>vset :split ~\/dotfiles\/nvim\/.set.vim <CR>$/;"	m
+<leader>vvim	nvim/.map.vim	/^	nnoremap <leader>vvim :split ~\/dotfiles\/nvim\/.vimrc <CR>$/;"	m
+<leader>w	nvim/.map.vim	/^	nmap <leader>w :Bclose<CR>$/;"	m
+<space><space>	nvim/.map.vim	/^	nnoremap <silent> <space><space> :Buffers<CR>$/;"	m
+F	nvim/.map.vim	/^	nnoremap F :HopWord <CR>$/;"	m
+InsertColon	nvim/.let.vim	/^function! InsertColon()$/;"	f
+J	nvim/.map.vim	/^	map J <C-D>$/;"	m
+J	nvim/.map.vim	/^	vnoremap J :m '>+1<CR>gv=gv$/;"	m
+K	nvim/.map.vim	/^	map K <C-U>$/;"	m
+K	nvim/.map.vim	/^	vnoremap K :m '<-2<CR>gv=gv$/;"	m
+NERDTreeShowHidden	nvim/.let.vim	/^let NERDTreeShowHidden=1$/;"	v
+OnChangeVueSyntax	nvim/.let.vim	/^function! OnChangeVueSyntax(syntax)$/;"	f
+Rg	nvim/.map.vim	/^	command! -bang -nargs=* Rg$/;"	c
+XX	nvim/.map.vim	/^	noremap XX "+x<CR>$/;"	m
+YY	nvim/.map.vim	/^	noremap YY "+y<CR>$/;"	m
+[	nvim/.map.vim	/^	inoremap [ []<left>$/;"	m
+c	nvim/.map.vim	/^	vnoremap c a{V$/;"	m
+f	nvim/.map.vim	/^	nnoremap f :HopLineStart <CR>$/;"	m
+g:NERDTreeGitStatusWithFlags	nvim/.let.vim	/^let g:NERDTreeGitStatusWithFlags = 1$/;"	v
+g:UltiSnipsExpandTrigger	nvim/.let.vim	/^let g:UltiSnipsExpandTrigger = '<Nop>'$/;"	v
+g:airline#extensions#tabline#enabled	nvim/.let.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#formatter	nvim/.let.vim	/^let g:airline#extensions#tabline#formatter = 'jsformatter'$/;"	v
+g:airline#extensions#tabline#left_alt_sep	nvim/.let.vim	/^let g:airline#extensions#tabline#left_alt_sep = '|'$/;"	v
+g:airline#extensions#tabline#left_sep	nvim/.let.vim	/^let g:airline#extensions#tabline#left_sep = ' '$/;"	v
+g:airline_powerline_fonts	nvim/.let.vim	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_theme	nvim/.let.vim	/^let g:airline_theme = 'luna'$/;"	v
+g:coc_global_extensions	nvim/.let.vim	/^let g:coc_global_extensions = [$/;"	v
+g:coc_snippet_next	nvim/.let.vim	/^let g:coc_snippet_next = '<TAB>'$/;"	v
+g:coc_snippet_prev	nvim/.let.vim	/^let g:coc_snippet_prev = '<S-TAB>'$/;"	v
+g:dart_format_on_save	nvim/.let.vim	/^let g:dart_format_on_save = 1$/;"	v
+g:dartfmt_options	nvim/.let.vim	/^let g:dartfmt_options = ['--fix', '--line-length 120']$/;"	v
+g:indentLine_char_list	nvim/.let.vim	/^let g:indentLine_char_list = ['|', '¦', '┆', '┊']$/;"	v
+g:indentLine_enabled	nvim/.let.vim	/^let g:indentLine_enabled = 1$/;"	v
+g:lsc_auto_map	nvim/.let.vim	/^let g:lsc_auto_map = v:true$/;"	v
+g:mkdp_auto_close	nvim/.let.vim	/^let g:mkdp_auto_close = 1$/;"	v
+g:mkdp_auto_start	nvim/.let.vim	/^let g:mkdp_auto_start = 0$/;"	v
+g:mkdp_browser	nvim/.let.vim	/^let g:mkdp_browser = ''$/;"	v
+g:mkdp_browserfunc	nvim/.let.vim	/^let g:mkdp_browserfunc = ''$/;"	v
+g:mkdp_command_for_global	nvim/.let.vim	/^let g:mkdp_command_for_global = 0$/;"	v
+g:mkdp_echo_preview_url	nvim/.let.vim	/^let g:mkdp_echo_preview_url = 0$/;"	v
+g:mkdp_filetypes	nvim/.let.vim	/^let g:mkdp_filetypes = ['markdown']$/;"	v
+g:mkdp_highlight_css	nvim/.let.vim	/^let g:mkdp_highlight_css = ''$/;"	v
+g:mkdp_markdown_css	nvim/.let.vim	/^let g:mkdp_markdown_css = ''$/;"	v
+g:mkdp_open_ip	nvim/.let.vim	/^let g:mkdp_open_ip = ''$/;"	v
+g:mkdp_open_to_the_world	nvim/.let.vim	/^let g:mkdp_open_to_the_world = 0$/;"	v
+g:mkdp_page_title	nvim/.let.vim	/^let g:mkdp_page_title = '「${name}」'$/;"	v
+g:mkdp_port	nvim/.let.vim	/^let g:mkdp_port = ''$/;"	v
+g:mkdp_preview_options	nvim/.let.vim	/^let g:mkdp_preview_options = {$/;"	v
+g:mkdp_refresh_slow	nvim/.let.vim	/^let g:mkdp_refresh_slow = 0$/;"	v
+g:prettier#autoformat	nvim/.let.vim	/^let g:prettier#autoformat = 0$/;"	v
+g:prettier#autoformat_config_present	nvim/.let.vim	/^let g:prettier#autoformat_config_present = 1$/;"	v
+g:prettier#autoformat_require_pragma	nvim/.let.vim	/^let g:prettier#autoformat_require_pragma = 0$/;"	v
+g:prettier#exec_cmd_async	nvim/.let.vim	/^let g:prettier#exec_cmd_async = 1$/;"	v
+g:smoothie_experimental_mappings	nvim/.let.vim	/^let g:smoothie_experimental_mappings = v:true$/;"	v
+g:tmuxline_theme	nvim/.let.vim	/^let g:tmuxline_theme = 'airline'$/;"	v
+g:user_emmet_install_global	nvim/.let.vim	/^let g:user_emmet_install_global = 0$/;"	v
+g:user_emmet_settings	nvim/.let.vim	/^let g:user_emmet_settings = {$/;"	v
+g:vim_json_conceal	nvim/.let.vim	/^let g:vim_json_conceal=1$/;"	v
+g:vim_jsx_pretty_colorful_config	nvim/.let.vim	/^let g:vim_jsx_pretty_colorful_config = 1 " default 0$/;"	v
+g:vim_vue_plugin_config	nvim/.let.vim	/^let g:vim_vue_plugin_config = { $/;"	v
+g<CR>	nvim/.map.vim	/^	nmap g<CR> :GitGutterFold<CR>$/;"	m
+gR	nvim/.map.vim	/^	nnoremap gR gD:%s\/<C-R>\/\/\/gc<left><left><left>$/;"	m
+gd	nvim/.map.vim	/^	nmap <silent> gd <Plug>(coc-definition)$/;"	m
+ghp	nvim/.map.vim	/^	nmap ghp <Plug>(GitGutterPreviewHunk)$/;"	m
+ghs	nvim/.map.vim	/^	nmap ghs <Plug>(GitGutterStageHunk)$/;"	m
+ghu	nvim/.map.vim	/^	nmap ghu <Plug>(GitGutterUndoHunk)$/;"	m
+gi	nvim/.map.vim	/^	nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gj	nvim/.map.vim	/^	nmap gj ]c$/;"	m
+gk	nvim/.map.vim	/^	nmap gk [c$/;"	m
+gr	nvim/.map.vim	/^	nmap <silent> gr <Plug>(coc-references)$/;"	m
+gy	nvim/.map.vim	/^	nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+iterm_profile	nvim/.set.vim	/^let iterm_profile = $ITERM_PROFILE$/;"	v
+mapleader	nvim/.map.vim	/^let mapleader = ","$/;"	v
+show_documentation	nvim/.map.vim	/^	function! s:show_documentation()$/;"	f
+zA	nvim/.map.vim	/^	nnoremap zA zM$/;"	m
+za	nvim/.map.vim	/^	nnoremap za zR$/;"	m
+{	nvim/.map.vim	/^	inoremap { {}<left>$/;"	m
+{;<CR>	nvim/.map.vim	/^	inoremap {;<CR> {<CR>};<ESC>O$/;"	m
+{<CR>	nvim/.map.vim	/^	inoremap {<CR> {<CR>}<ESC>O$/;"	m

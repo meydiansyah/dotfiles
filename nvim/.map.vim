@@ -1,48 +1,52 @@
 let mapleader = ","
-nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
-
-"" Floaterm
-	" nnoremap <silent> <leader><UP>		:FloatermToggle<CR>
-	" tnoremap <silent> <leader><UP>		<C-\><C-n>:FloatermToggle<CR>
-	" nnoremap <silent> <leader><DOWN>	:FloatermNew<CR>
-	" tnoremap <silent> <leader><DOWN>	<C-\><C-n>:FloatermNew<CR>
-	" nnoremap <silent> <leader><LEFT>	:FloatermPrev<CR>
-	" tnoremap <silent> <leader><LEFT>	<C-\><C-n>:FloatermPrev<CR>
-	" nnoremap <silent> <leader><RIGHT>	:FloatermNext<CR>
-	" tnoremap <silent> <leader><RIGHT>	<C-\><C-n>:FloatermNext<CR>
+nnoremap <leader>i :source ~/dotfiles/nvim/.vimrc \| PlugInstall<CR>
 
 "" Buffers
-	nnoremap <silent> <space><space>	:Buffers<CR>
-	tmap <space><space>					:Buffers<CR>
-	nnoremap <silent> <A-/>				:BLines<CR>
-	nnoremap <silent> <A-f>				:Files<CR>
-	nmap <leader>w						:Bclose<CR>
-	tmap <leader>c						exit<CR>
-	" noremap <leader>q					:q<CR>
-	nnoremap <leader>Q					:qa!<CR>
-	nnoremap <leader>e					:bn<CR>
-	nnoremap <leader>q					:bp<CR>
+	nnoremap <silent> <space><space> :Buffers<CR>
+	tmap <space><space>	:Buffers<CR>
+	nnoremap <silent> <A-/> :BLines<CR>
+	nnoremap <silent> <A-f> :Files<CR>
+	nmap <leader>w :Bclose<CR>
+	tmap <leader>c exit<CR>
+	nmap <leader>C :bd<CR>
+	nmap <Tab><Tab> <C-^>
+	nnoremap <leader>Q :qa!<CR>
+	nnoremap <leader>e :bn<CR>
+	nnoremap <leader>q :bp<CR>
+
+	nnoremap <leader>nt :tabnew <CR>
 
 "" Laravel
-	nnoremap <leader>tenv				:Eenv <CR>
+	nnoremap <leader>tenv :Eenv <CR>
 
 "" Flutter keymap"
-	xmap <leader>a						<Plug>(coc-codeaction-selected) <bar> h
-	nmap <leader>,a						<Plug>(coc-range-select) 
-	nmap <leader>a						<Plug>(coc-codeaction-selected) <bar> h
-	nmap <leader>4						:FlutterSplit <CR>
+	nnoremap <leader>fa :FlutterRun <CR>
+	nnoremap <leader>ft :FlutterOutlineToggle <CR>
+	nnoremap <leader>fpg :FlutterPubGet <CR>
+	nnoremap <leader>fr :FlutterReload <CR>
+	nnoremap <leader>fd :FlutterDevices <CR>
+	nnoremap <leader>fc :FlutterLogClear <CR>
+	nnoremap <leader>fx :FlutterQuit <CR>
+
+"" Coc
+	nmap <silent> gd <Plug>(coc-definition)
+	nmap <silent> gy <Plug>(coc-type-definition)
+	nmap <silent> gi <Plug>(coc-implementation)
+	nmap <silent> gr <Plug>(coc-references)
+	xmap <leader>a <Plug>(coc-codeaction-selected) <bar> h
+	nmap <leader>a <Plug>(coc-codeaction-selected) <bar> h
 	
-	" Coc
-	nmap <silent> gd					<Plug>(coc-definition)
-	nmap <silent> gy					<Plug>(coc-type-definition)
-	nmap <silent> gi					<Plug>(coc-implementation)
-	nmap <silent> gr					<Plug>(coc-references)
+	xmap <silent> vr <Plug>(coc-range-select)
+	nmap <silent> vr <Plug>(coc-range-select)
 
-	" Symbol renaming.
-	nmap <leader>rn						<Plug>(coc-rename)
+	" Use <c-space> to trigger completion.
+	inoremap <silent><expr> <A-Tab> coc#refresh()
 
-	" Use K to show documentation in preview window
-	nnoremap <silent> <leader><CR>		:call <SID>show_documentation()<CR>
+"" Symbol renaming.
+	nmap <leader>rn <Plug>(coc-rename)
+
+"" Use K to show documentation in preview window
+	nnoremap <silent> <Space><Tab>		:call <SID>show_documentation()<CR>
 	function! s:show_documentation()
 	  if (index(['vim','help'], &filetype) >= 0)
 		execute 'h '.expand('<cword>')
@@ -53,23 +57,32 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	  endif
 	endfunction
 
-	" imap <Tab> <Plug>(coc-snippets-expand)
+nmap <Tab> <Plug>(coc-snippets-expand)
 
 "" Auto close
-	inoremap " ""<left>
-	inoremap ' ''<left>
-	inoremap ( ()<left>
-	inoremap [ []<left>
-	inoremap { {}<left>
-	inoremap < <><left>
+	inoremap <A-"> ""<left>
+	inoremap <A-'> ''<left>
+	inoremap <A-`> ``<left>
+	inoremap <A-(> ()<left>
+	inoremap <A-[> []<left>
+	inoremap <A-{> {}<left>
+	inoremap <A-<> <><left>
 	inoremap {<CR> {<CR>}<ESC>O
-	inoremap {;<CR> {<CR>};<ESC>O
+	inoremap [<CR> [<CR>]<ESC>O
+	inoremap (<CR> (<CR>)<ESC>O
 
 "" Switching windows
-	noremap <leader>j					<C-w>j
-	noremap <leader>k					<C-w>k
+	noremap <A-j>						<C-w>j
+	noremap <A-k>						<C-w>k
 	noremap <leader><Tab>				<C-w>l
 	noremap <leader><S-Tab>				<C-w>h
+
+"" Resizing windows
+	nnoremap ww						<C-w>=
+	nnoremap wh						:vertical resize +5 <CR>
+	nnoremap wl						:vertical resize -5 <CR>
+	nnoremap <A-J>						:res +5 <CR>
+	nnoremap <A-K>						:res -5 <CR>
 
 "" Movement
 	nnoremap <A-l> e
@@ -85,10 +98,18 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	inoremap <A-L> <S-Right>
 	inoremap <A-H> <S-Left>
 	inoremap <A-BS> <C-W>
-	
+
+	nnoremap <C-j> :m .+1<CR>==
+	nnoremap <C-k> :m .-2<CR>==
+	inoremap <C-j> <Esc>:m .+1<CR>==gi
+	inoremap <C-k> <Esc>:m .-2<CR>==gi
+	vnoremap <C-j> :m '>+1<CR>gv=gv
+	vnoremap <C-k> :m '<-2<CR>gv=
+
+	nmap <A-CR> zz
 "" Scroll 
-	map K <C-D>
-	map J <C-U>
+	map J <C-D>
+	map K <C-U>
 	map <A-L> 5zl
 	map <A-H> 5zh
 
@@ -99,6 +120,7 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 "" Copy paste
 	noremap YY "+y<CR>
 	noremap XX "+x<CR>
+	vnoremap c a{V
 
 	" redo
 	noremap <a-u> <c-R>
@@ -113,6 +135,16 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	" move change
 	nmap gk [c
 	nmap gj ]c
+
+"" Git merge tool
+	nmap <leader>mts :MergetoolStart <CR>
+	nmap <leader>mtq :MergetoolStop <CR>
+	nmap <leader>mtl :MergetoolPreferLocal <CR> :MergetoolStop <CR>
+	nmap <leader>mtr :MergetoolPreferRemote <CR> :MergetoolStop <CR>
+	nmap <leader>mtt <plug>(MergetoolToggle)
+
+	nmap <leader>gd :Gdiff <CR>
+	nmap <leader>gc :BCommits <CR>
 
 "" Save File
 	nmap <a-s> :w<CR>
@@ -134,9 +166,11 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	" duplicate line
 	nnoremap <A-d> YP
 
-	" new tab
-	nnoremap <leader>t :tabe <CR>
-	nnoremap <leader>tv :vsp <CR>
+	" tab
+	nnoremap <A-T> :tabe <CR>
+	nnoremap <A-v> :vsp <CR>
+	nnoremap <A-h> :sp <CR>
+	
 
 	nnoremap <leader>,so :source ~/dotfiles/nvim/.vimrc <CR>
 
@@ -160,7 +194,7 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	nnoremap <leader>hvim :vsp ~/dotfiles/nvim/.vimrc <CR>
 	nnoremap <leader>vvim :split ~/dotfiles/nvim/.vimrc <CR>
 
-	nnoremap <leader>,s :Startify <CR>
+	" nnoremap <leader>,s :Startify <CR>
 
 	nnoremap za zR
 	nnoremap zA zM
@@ -180,7 +214,11 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 	nnoremap <leader>d "_d
 	xnoremap <leader>p "_dP
 
-"" RG command
+"" Hop
+	nnoremap f :HopLineStart <CR>
+	nnoremap F :HopWord <CR>
+
+""  RG command
 	nnoremap <C-g> :Rg<CR>
 	command! -bang -nargs=* Rg
 				\ call fzf#vim#grep(

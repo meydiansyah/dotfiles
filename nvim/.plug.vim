@@ -2,20 +2,21 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " #Flutter Plugins {{{
-	Plug 'thosakwe/vim-flutter'
-	Plug 'natebosch/vim-lsc'
-	Plug 'natebosch/vim-lsc-dart'
-	Plug 'jiangmiao/auto-pairs'
+	" Plug 'thosakwe/vim-flutter'
 	Plug 'dart-lang/dart-vim-plugin'
 	Plug 'Neevash/awesome-flutter-snippets'
+
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'akinsho/flutter-tools.nvim'
 "" }}}
 
-" #Laravel Plugins {{{
-	Plug 'tpope/vim-dispatch'             "| Optional
-	Plug 'tpope/vim-projectionist'        "|
-	Plug 'noahfrederick/vim-composer'     "|
-	Plug 'noahfrederick/vim-laravel'
-" }}}
+" " #Laravel Plugins {{{
+" 	Plug 'tpope/vim-dispatch'             "| Optional
+" 	Plug 'tpope/vim-projectionist'        "|
+" 	Plug 'noahfrederick/vim-composer'     "|
+" 	Plug 'noahfrederick/vim-laravel'
+	Plug 'jwalton512/vim-blade'
+" " }}}
 "
 " # React {{{
 	Plug 'pangloss/vim-javascript'
@@ -58,6 +59,16 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'junegunn/fzf.vim'
 
 	Plug 'folke/which-key.nvim'
+	Plug 'phaazon/hop.nvim'
+
+	Plug 'leafOfTree/vim-matchtag'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+	
+	Plug 'mhartington/oceanic-next'
+
+	Plug 'samoshkin/vim-mergetool'
+	Plug 'tpope/vim-fugitive'
+	Plug 'rcarriga/nvim-notify'
 " }}}
 
 call plug#end()

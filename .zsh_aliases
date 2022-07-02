@@ -7,7 +7,6 @@
 alias eal='n ~/dotfiles/.zsh_aliases'
 alias exp='n ~/dotfiles/.zsh_export'
 alias n=nvim
-alias h8='cd /Library/WebServer/Documents/hacktiv8/ && clear'
 
 #--- Source --------------------------------------------------------------------------
 
@@ -16,8 +15,12 @@ alias sot='tmux source ~/.tmux.conf'
 
 #--- Project directore ---------------------------------------------------------------
 
-alias inf='~/AndroidStudioProjects/project/2021_12/infosiss_trucking && n'
+alias inf='~/AndroidStudioProjects/project/repo/fei/infoss && n'
 alias fp='~/AndroidStudioProjects/project/ && clear'
+alias lp='~/Documents/dev/php/laravel/ && clear'
+alias rp='~/Documents/dev/react/ && clear'
+alias h8='cd /Library/WebServer/Documents/hacktiv8/ && clear'
+alias twb-prod='~/Documents/dev/react/next/prod/marketplace-frontend-service && n'
 
 #--- Github command ------------------------------------------------------------------
 
@@ -28,6 +31,7 @@ alias gcod='git checkout develop'
 alias gcom='git checkout master'
 alias gmd='git checkout develop'
 alias gmm='git checkout master'
+alias lazyinf='~/AndroidStudioProjects/project/repo/fei/infoss && lazygit'
 
 #--- Laravel command ----------------------------------------------------------------
 
@@ -38,7 +42,6 @@ alias pamct='php artisan make:controller'
 alias paml='php artisan make:livewire'
 alias pams='php artisan make:seed'
 alias pamm='php artisan make:model '
-alias lp='~/Documents/dev/php/laravel/ && clear'
 
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
@@ -49,6 +52,7 @@ alias x='exit'
 alias tm='tmate'
 alias c='clear'
 alias rmd='sudo rm -r '
+alias rm='rm -i'
 
 # tmux
 alias t='tmux'
@@ -58,6 +62,10 @@ alias tas='tmux attach-session -t'
 
 # open scrcpy flutter develop
 alias s='scrcpy -Sw --window-x 1000' 
+
+# Flutter
+alias fpg='flutter pub get'
+alias fpa='flutter pub add'
 
 # mysql
 alias mysql=/usr/local/mysql/bin/mysql

@@ -8,11 +8,12 @@ set encoding=utf8
 set expandtab
 " set fileencoding=utf-8
 " set fileencodings=utf-8
-set fillchars+=vert:\|  
+" set fillchars+=vert:\|  
 " set foldlevel=1 " 99 disable fold, 1 enable fold
 set foldmethod=indent
 " set foldnestmax=2
-set foldenable
+" set foldenable
+set nofoldenable
 
 set gdefault
 set hidden
@@ -59,11 +60,17 @@ set virtualedit=block
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 set wildmode=list:longest,list:full
 
+set nocompatible
+
 let iterm_profile = $ITERM_PROFILE
 if iterm_profile == "light"
     set background=light
 else
     set background=dark
+endif
+
+if (has("termguicolors"))
+ set termguicolors
 endif
 
 " Fix bug 256color from tmux
