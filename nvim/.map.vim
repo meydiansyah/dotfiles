@@ -106,6 +106,7 @@ nnoremap <leader>i :source $HOME/.config/nvim/init.vim \| PlugInstall<CR>
 "" GitGutter
 	nmap ghs <Plug>(GitGutterStageHunk)
 	nmap ghu <Plug>(GitGutterUndoHunk)
+	nmap g<CR> :GitGutterFold<CR>
 
 	" preview change
 	nmap ghp <Plug>(GitGutterPreviewHunk)
