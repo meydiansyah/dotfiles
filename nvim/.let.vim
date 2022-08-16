@@ -6,12 +6,13 @@ let g:airline_powerline_fonts = 1
 let g:lsc_auto_map = v:true
 
 let g:user_emmet_install_global = 0
-let g:smoothie_experimental_mappings = v:true
+" let g:smoothie_experimental_mappings = v:true
 
 " status line
 let g:tmuxline_theme = 'airline'
 " let g:airline_theme = 'luna'
 let g:airline_theme='oceanicnext'
+" let g:airline_theme='base16color'
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 

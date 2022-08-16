@@ -60,6 +60,9 @@ set virtualedit=block
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 set wildmode=list:longest,list:full
 
+set list
+set listchars=tab:•\ ,trail:•,extends:»,precedes:« " Unprintable chars mapping
+
 set nocompatible
 
 let iterm_profile = $ITERM_PROFILE
@@ -76,7 +79,7 @@ endif
 " Fix bug 256color from tmux
 if &term =~ '256color'
     " disable Background Color Erase (BCE)
-    set t_ut=
+	set term=screen-256color
 endif
 
 if &term =~ '^screen'

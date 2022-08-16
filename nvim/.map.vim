@@ -7,7 +7,7 @@ nnoremap <leader>i :source ~/dotfiles/nvim/.vimrc \| PlugInstall<CR>
 	nnoremap <silent> <A-/> :BLines<CR>
 	nnoremap <silent> <A-f> :Files<CR>
 	nmap <leader>w :Bclose<CR>
-	tmap <leader>c exit<CR>
+	tmap <leader>c :exit<CR>
 	nmap <leader>C :bd<CR>
 	nmap <Tab><Tab> <C-^>
 	nnoremap <leader>Q :qa!<CR>
@@ -233,3 +233,7 @@ nmap <Tab> <Plug>(coc-snippets-expand)
 
 "" Set working directory
 	nnoremap <leader>/ :cd %:p:h<CR>
+
+"" Folding
+	map <A-.> zc
+	map <A->> zv

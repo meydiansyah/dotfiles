@@ -15,18 +15,20 @@ call plug#begin('~/.config/nvim/plugged')
 " 	Plug 'tpope/vim-projectionist'        "|
 " 	Plug 'noahfrederick/vim-composer'     "|
 " 	Plug 'noahfrederick/vim-laravel'
-	Plug 'jwalton512/vim-blade'
+"
+	" Plug 'jwalton512/vim-blade'
 " " }}}
 "
 " # React {{{
-	Plug 'pangloss/vim-javascript'
-	Plug 'leafgarland/typescript-vim'
-	Plug 'maxmellon/vim-jsx-pretty'
-	Plug 'SirVer/ultisnips'
-	Plug 'mlaursen/vim-react-snippets'
-	Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+	" Plug 'pangloss/vim-javascript'
+	" Plug 'leafgarland/typescript-vim'
+	" Plug 'maxmellon/vim-jsx-pretty'
+	" Plug 'SirVer/ultisnips'
+	" Plug 'mlaursen/vim-react-snippets'
+	" Plug 'leafOfTree/vim-vue-plugin'
 " }}}
 
+	Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 " #Interface Plugins {{{
 	Plug 'preservim/nerdtree' |
@@ -41,17 +43,16 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'vim-airline/vim-airline-themes'
 
 	Plug 'ryanoasis/vim-devicons'
-	Plug 'mhinz/vim-startify'
+	" Plug 'mhinz/vim-startify'
 	Plug 'tomtom/tcomment_vim'
 	Plug 'Yggdroot/indentLine'
 	Plug 'rbgrouleff/bclose.vim'
 
-	Plug 'leafOfTree/vim-vue-plugin'
 
 	Plug 'airblade/vim-gitgutter'
 	Plug 'mattn/emmet-vim'
 
-	Plug 'psliwka/vim-smoothie'
+	" Plug 'psliwka/vim-smoothie'
 
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
