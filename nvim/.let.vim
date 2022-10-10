@@ -65,6 +65,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-tsserver',
   \ 'coc-blade',
+  \ 'coc-kotlin',
   \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')

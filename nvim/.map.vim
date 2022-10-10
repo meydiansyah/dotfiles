@@ -20,7 +20,7 @@ nnoremap <leader>i :source ~/dotfiles/nvim/.vimrc \| PlugInstall<CR>
 	nnoremap <leader>tenv :Eenv <CR>
 
 "" Flutter keymap"
-	nnoremap <leader>fa :FlutterRun <CR>
+	nnoremap <leader>fR :FlutterRun <CR>
 	nnoremap <leader>ft :FlutterOutlineToggle <CR>
 	nnoremap <leader>fpg :FlutterPubGet <CR>
 	nnoremap <leader>fr :FlutterReload <CR>

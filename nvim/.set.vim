@@ -77,10 +77,10 @@ if (has("termguicolors"))
 endif
 
 " Fix bug 256color from tmux
-if &term =~ '256color'
+" if &term =~ '256color'
     " disable Background Color Erase (BCE)
-	set term=screen-256color
-endif
+	" set term=screen-256color
+" endif
 
 if &term =~ '^screen'
     " tmux will send xterm-style keys when its xterm-keys option is on

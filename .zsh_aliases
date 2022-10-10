@@ -26,6 +26,7 @@ alias twb-prod='~/Documents/dev/react/next/prod/marketplace-frontend-service && 
 #--- Github command ------------------------------------------------------------------
 
 alias gs='git status'
+alias grv='git remote -v'
 alias gpm='git push -u origin master'
 alias gpod='git push develop'
 alias gcod='git checkout develop'

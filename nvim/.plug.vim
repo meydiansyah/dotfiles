@@ -11,21 +11,21 @@ call plug#begin('~/.config/nvim/plugged')
 "" }}}
 
 " " #Laravel Plugins {{{
-" 	Plug 'tpope/vim-dispatch'             "| Optional
-" 	Plug 'tpope/vim-projectionist'        "|
-" 	Plug 'noahfrederick/vim-composer'     "|
-" 	Plug 'noahfrederick/vim-laravel'
+	Plug 'tpope/vim-dispatch'             "| Optional
+	Plug 'tpope/vim-projectionist'        "|
+	Plug 'noahfrederick/vim-composer'     "|
+	Plug 'noahfrederick/vim-laravel'
 "
-	" Plug 'jwalton512/vim-blade'
+	Plug 'jwalton512/vim-blade'
 " " }}}
 "
 " # React {{{
-	" Plug 'pangloss/vim-javascript'
+	Plug 'pangloss/vim-javascript'
 	" Plug 'leafgarland/typescript-vim'
 	" Plug 'maxmellon/vim-jsx-pretty'
 	" Plug 'SirVer/ultisnips'
 	" Plug 'mlaursen/vim-react-snippets'
-	" Plug 'leafOfTree/vim-vue-plugin'
+	Plug 'posva/vim-vue'
 " }}}
 
 	Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
@@ -70,6 +70,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'samoshkin/vim-mergetool'
 	Plug 'tpope/vim-fugitive'
 	Plug 'rcarriga/nvim-notify'
+	Plug 'udalov/kotlin-vim'
 " }}}
 
 call plug#end()
