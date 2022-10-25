@@ -1,0 +1,26 @@
+{
+	"flutter.sdk.path": "/Users/dev/Documents/flutter/bin/flutter",
+	"flutter.sdk.searchPaths": [
+		"/Users/dev/Documents/flutter/bin/flutter"
+	],
+	"coc.preferences.formatOnSaveFiletypes": [
+		"dart",
+		"json"
+	],
+	"flutter.openDevLogSplitCommand": "<leader>f-",
+	"languageserver": {
+  "dart": {
+    "command": "dart",
+    "args": [
+      "/usr/local/opt/dart/libexec/bin/snapshots/analysis_server.dart.snapshot",
+      "--lsp",
+      "--client-id",
+      "vim",
+      "--client-version",
+      "coc.nvim"
+    ],
+    "filetypes": ["dart"],
+    "trace.server": "verbose"
+  }
+}
+}

@@ -1,0 +1,80 @@
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#--- Editor --------------------------------------------------------------------------
+
+alias eal='n ~/dotfiles/.zsh_aliases'
+alias exp='n ~/dotfiles/.zsh_export'
+alias n=nvim
+
+#--- Source --------------------------------------------------------------------------
+
+alias so='source ~/.zshrc'
+alias sot='tmux source ~/.tmux.conf'
+
+#--- Project directore ---------------------------------------------------------------
+
+alias inf='~/AndroidStudioProjects/project/repo/fei/infoss && n'
+alias ark='cd ~/AndroidStudioProjects/project/repo/arkadians/'
+alias fp='~/AndroidStudioProjects/project/ && clear'
+alias lp='~/Documents/dev/php/laravel/ && clear'
+alias rp='~/Documents/dev/react/ && clear'
+alias h8='cd /Library/WebServer/Documents/hacktiv8/ && clear'
+alias twb-prod='~/Documents/dev/react/next/prod/marketplace-frontend-service && n'
+
+#--- Github command ------------------------------------------------------------------
+
+alias gs='git status'
+alias grv='git remote -v'
+alias gpm='git push -u origin master'
+alias gpod='git push develop'
+alias gcod='git checkout develop'
+alias gcom='git checkout master'
+alias gmd='git checkout develop'
+alias gmm='git checkout master'
+alias lazyinf='~/AndroidStudioProjects/project/repo/fei/infoss && lazygit'
+alias lazyark='~/AndroidStudioProjects/project/repo/arkadians/serbada-mobileapp && lazygit'
+
+#--- Laravel command ----------------------------------------------------------------
+
+alias pa='php artisan'
+alias pas='php artisan serve'
+alias pamc='php artisan make:component'
+alias pamct='php artisan make:controller'
+alias paml='php artisan make:livewire'
+alias pams='php artisan make:seed'
+alias pamm='php artisan make:model '
+
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+
+#--- General command ----------------------------------------------------------------
+
+alias ll='ls -lah'
+alias x='exit'
+alias tm='tmate'
+alias c='clear'
+alias rmd='sudo rm -r '
+alias rm='rm -i'
+
+# tmux
+alias t='tmux'
+alias tn='tmux new -s'
+alias tks='tmux kill-session -t'
+alias tas='tmux attach-session -t'
+
+# open scrcpy flutter develop
+alias s='scrcpy -Sw --window-x 1000' 
+
+# Flutter
+alias fpg='flutter pub get'
+alias fpa='flutter pub add'
+alias ft='flutter test'
+alias fr='flutter run'
+alias frr='flutter run release'
+alias fb='flutter build apk --split-per-abi'
+
+# mysql
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias myloc="mysql -u root --password='password'"
