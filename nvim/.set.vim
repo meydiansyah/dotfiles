@@ -31,7 +31,13 @@ set noexpandtab
 set noshowmode
 set noswapfile
 set novisualbell
+
+" disable wrap
 set nowrap
+" enable wrap
+" set wrap
+" set linebreak
+
 set number relativenumber
 set path+=**
 set re=1
@@ -106,3 +112,4 @@ if has('unnamedplus')
     set clipboard=unnamed,unnamedplus
 endif
 
+set showbreak =\ >>>>>\ \ 

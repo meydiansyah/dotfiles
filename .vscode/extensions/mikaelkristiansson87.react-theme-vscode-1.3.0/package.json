@@ -1,0 +1,45 @@
+{
+	"name": "react-theme-vscode",
+	"displayName": "React Theme",
+	"description": "Theme based on React's website colors",
+	"version": "1.3.0",
+	"publisher": "mikaelkristiansson87",
+	"author": "Mikael Kristiansson <mikael.kristiansson87@gmail.com>",
+	"icon": "logo.png",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mikaelkristiansson/react-theme-vscode"
+	},
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "React Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/react-theme-color-theme.json"
+			}
+		]
+	},
+	"keywords": [
+		"Vscode",
+		"Theme",
+		"react"
+	],
+	"__metadata": {
+		"id": "5016cebf-ae4e-47ab-b19d-9931db68b43d",
+		"publisherId": "e611a6ba-43a4-4bdd-9229-a89d39ed00a6",
+		"publisherDisplayName": "mikaelkristiansson87",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1670226258136,
+		"preRelease": false
+	}
+}

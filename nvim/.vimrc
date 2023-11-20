@@ -36,8 +36,16 @@ lua << EOF
 EOF
 
 "" Vim notify
+" lua << EOF
+" 	require("notify")
+" EOF
+
 lua << EOF
-	require("notify")
+	require 'colorizer'.setup {
+	  '*'; -- Highlight all files, but customize some others.
+	  '!vim'; -- Exclude vim from highlighting.
+	  -- Exclusion Only makes sense if '*' is specified!
+	}
 EOF
 
 lua << EOF
@@ -79,3 +87,4 @@ require("flutter-tools").setup {
   }
 }
 EOF
+

@@ -56,6 +56,7 @@ let g:prettier#autoformat_config_present = 1
 let g:prettier#autoformat_require_pragma = 0
 
 let g:vim_jsx_pretty_colorful_config = 1 " default 0
+let g:prettier#config#use_tabs = 'false'
 
 "coc config
 let g:coc_global_extensions = [
@@ -156,3 +157,5 @@ let g:blade_custom_directives_pairs = {
       \   'markdown': 'endmarkdown',
       \   'cache': 'endcache',
       \ }
+
+let g:node_client_debug = 1

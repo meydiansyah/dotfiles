@@ -21,14 +21,16 @@ call plug#begin('~/.config/nvim/plugged')
 "
 " # React {{{
 	Plug 'pangloss/vim-javascript'
-	" Plug 'leafgarland/typescript-vim'
-	" Plug 'maxmellon/vim-jsx-pretty'
-	" Plug 'SirVer/ultisnips'
-	" Plug 'mlaursen/vim-react-snippets'
+	Plug 'leafgarland/typescript-vim'
+	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'SirVer/ultisnips'
+	Plug 'mlaursen/vim-react-snippets'
 	Plug 'posva/vim-vue'
 " }}}
 
-	Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+	Plug 'prettier/vim-prettier', {
+      \ 'do': 'npm install --frozen-lockfile --production',
+	  \ 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact']}
 
 " #Interface Plugins {{{
 	Plug 'preservim/nerdtree' |
@@ -69,8 +71,13 @@ call plug#begin('~/.config/nvim/plugged')
 
 	Plug 'samoshkin/vim-mergetool'
 	Plug 'tpope/vim-fugitive'
-	Plug 'rcarriga/nvim-notify'
+	" Plug 'rcarriga/nvim-notify'
 	Plug 'udalov/kotlin-vim'
+
+	Plug 'davidhalter/jedi-vim'
+
+	Plug 'norcalli/nvim-colorizer.lua'
+	Plug 'themaxmarchuk/tailwindcss-colors.nvim'
 " }}}
 
 call plug#end()

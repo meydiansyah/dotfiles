@@ -1,0 +1,207 @@
+{
+	"private": true,
+	"preview": false,
+	"name": "vue",
+	"publisher": "znck",
+	"displayName": "Vue",
+	"version": "0.12.0",
+	"description": "Syntax Highlight",
+	"icon": "logo.png",
+	"main": "dist/index.js",
+	"browser": "dist/index.web.js",
+	"buildConfig": {
+		"useMain": false,
+		"sources": {
+			"src/index.ts": [
+				{
+					"format": "cjs",
+					"file": "dist/index.js",
+					"bundle": {
+						"format": "cjs",
+						"platform": "node",
+						"external": [
+							"vscode"
+						]
+					}
+				},
+				{
+					"format": "cjs",
+					"file": "dist/index.web.js",
+					"bundle": {
+						"format": "iife",
+						"platform": "browser",
+						"external": [
+							"vscode"
+						]
+					}
+				}
+			]
+		},
+		"external": [
+			"vscode"
+		]
+	},
+	"activationEvents": [
+		"onLanguage:vue",
+		"onCommand:vue.generateGrammar"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/znck/vue-developer-experience"
+	},
+	"keywords": [
+		"vue",
+		"vetur"
+	],
+	"author": "Rahul Kadyan <rahulkdn@gmail.com> (https://znck.me/)",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"language": "vue",
+				"scopeName": "source.vue",
+				"path": "./syntaxes/vue.tmLanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.javascript": "javascript",
+					"meta.embedded.block.typescript": "typescript"
+				}
+			},
+			{
+				"language": "vue-html",
+				"scopeName": "text.html.vue-html",
+				"path": "./syntaxes/vue-html.tmLanguage.json",
+				"embeddedLanguages": {
+					"source.js": "javascript"
+				}
+			},
+			{
+				"scopeName": "markdown.vue.codeblock",
+				"path": "./syntaxes/markdown-vue.tmLanguage.json",
+				"injectTo": [
+					"text.html.markdown"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.vue": "vue"
+				}
+			},
+			{
+				"scopeName": "markdown.vue-html.codeblock",
+				"path": "./syntaxes/markdown-vue-html.tmLanguage.json",
+				"injectTo": [
+					"text.html.markdown"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.block.vue-html": "vue-html"
+				}
+			}
+		],
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue"
+				],
+				"extensions": [
+					".vue"
+				],
+				"configuration": "./languages/vue-language-configuration.json"
+			},
+			{
+				"id": "vue-html",
+				"aliases": [
+					"Vue HTML",
+					"vhtml",
+					"vhtm"
+				],
+				"extensions": [
+					".vue-html",
+					".vhtml"
+				],
+				"configuration": "./languages/vue-html-language-configuration.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "vue.generateGrammar",
+				"title": "Vue: Refresh syntax highlighter"
+			}
+		],
+		"configuration": {
+			"title": "Vue",
+			"properties": {
+				"vue.blocks": {
+					"scope": "application",
+					"type": "object",
+					"patternProperties": {
+						"^[A-Za-z][A-Za-z0-9-]*$": {
+							"type": "object",
+							"properties": {
+								"default": {
+									"enum": [
+										"",
+										"javascript",
+										"typescript",
+										"css",
+										"postcss",
+										"scss",
+										"sass",
+										"stylus",
+										"vue-html",
+										"vue",
+										"markdown",
+										"html"
+									]
+								},
+								"allowed": {
+									"type": "array",
+									"items": {
+										"enum": [
+											"javascript",
+											"typescript",
+											"css",
+											"postcss",
+											"scss",
+											"sass",
+											"stylus",
+											"vue-html",
+											"vue",
+											"md",
+											"markdown",
+											"html"
+										]
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"bugs": {
+		"url": "https://github.com/znck/vue-developer-experience/issues"
+	},
+	"homepage": "https://github.com/znck/vue-developer-experience/blob/main/extensions/vscode#readme",
+	"scripts": {
+		"build": "node scripts/build.mjs",
+		"release": "vsce publish -p ${VSCODE_MARKETPLACE_TOKEN} --packagePath ./vue.vsix",
+		"pre-release": "vsce publish --pre-release -p ${VSCODE_MARKETPLACE_TOKEN} --packagePath ./vue.vsix"
+	},
+	"__metadata": {
+		"id": "5a169b85-b35d-48de-8dda-1b7ba2631c0e",
+		"publisherId": "ae59adf5-29af-42f4-9e2f-a3ab76a1dabb",
+		"publisherDisplayName": "Rahul Kadyan",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1670745292900,
+		"preRelease": false
+	}
+}

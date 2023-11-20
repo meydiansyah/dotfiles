@@ -1,0 +1,99 @@
+{
+  "coc-json|global": {
+    "json-schema-cache": {
+      "https://json.schemastore.org/tsconfig.json": {
+        "etag": "\"808de2370ded91:0\"",
+        "fileName": "a28507e42e8bfd5fba830538461d5db3.schema.json",
+        "updateTime": 1697896621217
+      },
+      "https://json.schemastore.org/package.json": {
+        "etag": "\"80e4d0496aead91:0\"",
+        "fileName": "473f72b44c2905902dfbcc770aab7f7a.schema.json",
+        "updateTime": 1697897088293
+      },
+      "https://json.schemastore.org/jscpd.json": {
+        "etag": "\"80bec5ba1984d81:0\"",
+        "fileName": "22bfc1ab1ff56aae62322f6ce45dab5a.schema.json",
+        "updateTime": 1697897089063
+      },
+      "https://json.schemastore.org/semantic-release.json": {
+        "etag": "\"808cdec3a9a4d81:0\"",
+        "fileName": "fbc95702ba6eddb3e2de4f52e31ca82a.schema.json",
+        "updateTime": 1697897089070
+      },
+      "https://json.schemastore.org/ava.json": {
+        "etag": "\"80cdbd40989d91:0\"",
+        "fileName": "635f57185b22bce9d3a56c68f5da4ad7.schema.json",
+        "updateTime": 1697897089055
+      },
+      "https://json.schemastore.org/prettierrc.json": {
+        "etag": "\"80ea857572e2d91:0\"",
+        "fileName": "ea5ab10330a3ab77dfd6d00a735b0925.schema.json",
+        "updateTime": 1697897089106
+      },
+      "https://json.schemastore.org/stylelintrc.json": {
+        "etag": "\"0d52dd6eabd91:0\"",
+        "fileName": "000bfbdd14d2fb8ec5b0d59bec32ef98.schema.json",
+        "updateTime": 1697897089052
+      },
+      "https://json.schemastore.org/eslintrc.json": {
+        "etag": "\"09c10cf5f2bd91:0\"",
+        "fileName": "c5064f140d4cfdbf4d6fbe68f68abbb1.schema.json",
+        "updateTime": 1697897089065
+      },
+      "https://raw.githubusercontent.com/composer/composer/main/res/composer-schema.json": {
+        "etag": "W/\"04960d3e71e272d770c521c5efd2cd9bae4401675fc18bcdb374b2553960823d\"",
+        "fileName": "f7e7d9b523134e14a22909190910e98a.schema.json",
+        "updateTime": 1692134848742
+      },
+      "https://json.schemastore.org/expo-41.0.0.json": {
+        "etag": "\"0a4fb9ee1ed91:0\"",
+        "fileName": "ee7487ed1bb627cefdb206947ced6bc2.schema.json",
+        "updateTime": 1679900998081
+      },
+      "https://json.schemastore.org/webextension.json": {
+        "etag": "\"0723a2b8ad2d81:0\"",
+        "fileName": "b731fe11a3d127fd02a39912a2530816.schema.json",
+        "updateTime": 1689852741296
+      },
+      "https://json.schemastore.org/web-manifest-combined.json": {
+        "etag": "\"43e0aa0326ad81:0\"",
+        "fileName": "b06e2f702dd4972ea2bb3d76ff088406.schema.json",
+        "updateTime": 1689852741304
+      },
+      "https://json.schemastore.org/foxx-manifest.json": {
+        "etag": "\"8020ee6d181ad91:0\"",
+        "fileName": "5e1deef4adbcb453011b95df734ed4a0.schema.json",
+        "updateTime": 1689852741305
+      },
+      "https://json.schemastore.org/web-manifest-share-target.json": {
+        "etag": "\"8059190326ad81:0\"",
+        "fileName": "cdeb8e92350ff78b8eec26631dae6f2d.schema.json",
+        "updateTime": 1689852742064
+      },
+      "https://json.schemastore.org/web-manifest-app-info.json": {
+        "etag": "\"b27da80326ad81:0\"",
+        "fileName": "37e25b60beaa201ec2222b96a2ea00d6.schema.json",
+        "updateTime": 1689852742068
+      },
+      "https://json.schemastore.org/web-manifest.json": {
+        "etag": "\"8059190326ad81:0\"",
+        "fileName": "6edb6ea4435d040104641056c40c6326.schema.json",
+        "updateTime": 1689852742108
+      },
+      "https://json.schemastore.org/jsconfig.json": {
+        "etag": "\"80cc784ccf34d91:0\"",
+        "fileName": "6ff9f802958977b3c287b369d75da211.schema.json",
+        "updateTime": 1691048432379
+      },
+      "https://json.schemastore.org/prettierrc": {
+        "etag": "\"80ea857572e2d91:0\"",
+        "fileName": "6607d3e0d4e9e672799c799e01a72765.schema.json",
+        "updateTime": 1697896665159
+      }
+    }
+  },
+  "@yaegassy/coc-volar|/Users/dev/Documents/bin/vue/jakmall_test": {
+    "coc-volar-tsdk-path": "/Users/dev/.config/coc/extensions/node_modules/@yaegassy/coc-volar/node_modules/typescript/lib"
+  }
+}

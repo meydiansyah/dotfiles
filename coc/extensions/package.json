@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "coc-snippets": ">=3.1.2",
+    "coc-json": ">=1.7.0",
+    "coc-flutter": ">=1.9.9",
+    "coc-yaml": ">=1.9.0",
+    "coc-tsserver": ">=1.12.0",
+    "coc-kotlin": ">=0.1.0",
+    "coc-blade": ">=0.14.3",
+    "coc-phpls": ">=2.2.2",
+    "coc-eslint": ">=1.5.8",
+    "coc-react-refactor": ">=0.5.0",
+    "coc-tailwindcss": ">=0.7.0",
+    "@yaegassy/coc-volar-tools": ">=0.3.3",
+    "@yaegassy/coc-volar": ">=0.34.16",
+    "coc-vetur": ">=1.2.5"
+  },
+  "lastUpdate": 1681714794364
+}
