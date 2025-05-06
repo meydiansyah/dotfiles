@@ -86,10 +86,11 @@ return {
 				disable_context_highlighting = false,
 				disable_signs = false,
 				disable_insert_on_commit = "auto",
-				filewatcher = {
+        filewatcher = { enabled = false },
+				--[[ filewatcher = {
 					interval = 1000,
 					enabled = true,
-				},
+				}, ]]
 				graph_style = "ascii",
 				git_services = {
 					["github.com"] = "https://github.com/${owner}/${repository}/compare/${branch_name}?expand=1",

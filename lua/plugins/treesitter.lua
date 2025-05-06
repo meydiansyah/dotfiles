@@ -13,13 +13,20 @@ return {
 				"typescript",
 				"tsx",
 				"svelte",
-				"go",
+				-- "go",
 				"json",
+				"php_only",
 			},
 			sync_install = false,
-			highlight = { enable = true },
+			highlight = {
+				enable = true,
+				additional_vim_regex_highlighting = { "blade" }, -- Ensure Blade syntax is highlighted
+			},
 			indent = { enable = true },
 			auto_install = true,
+      filter = {
+        dotfiels = false
+      }
 		})
 	end,
 }

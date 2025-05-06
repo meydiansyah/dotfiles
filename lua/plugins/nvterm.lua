@@ -10,7 +10,7 @@ return {
     end,{})
 
     -- toggle terminal horizontal
-    vim.keymap.set("t","<leader><space>h",function()
+    vim.keymap.set("t","<A-`>",function()
         require("nvterm.terminal").toggle "horizontal"
     end,{})
 
@@ -26,7 +26,7 @@ return {
     end,{})
 
     -- toggle terminal horizontal
-    vim.keymap.set("n","<leader><space>h",function()
+    vim.keymap.set("n","<A-`>",function()
         require("nvterm.terminal").toggle "horizontal"
     end,{})
 

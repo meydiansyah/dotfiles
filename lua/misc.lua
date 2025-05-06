@@ -8,11 +8,10 @@ vim.opt.wrap = false
 vim.opt.clipboard = "unnamedplus"
 
 -- set ukuran tab menjadi 4 spasi
-vim.o.tabstop = 4
+vim.o.tabstop = 2
 vim.o.expandtab = true
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
 
 -- set powershell sebagai shell default
 vim.o.shell = "powershell.exe"
@@ -23,13 +22,12 @@ vim.o.shellquote = ""
 vim.o.shellpipe = "| Out-File -Encoding UTF8 %s"
 vim.o.shellredir = "| Out-File -Encoding UTF8 %s"
 
-
 -- set relative line number
-vim.wo.relativenumber = true
+vim.wo.relativenumber = false
 
 -- line break
 vim.opt.breakindent = true
-vim.opt.formatoptions:remove "t"
+vim.opt.formatoptions:remove("t")
 vim.opt.linebreak = true
 
 -- incremental search
@@ -42,7 +40,7 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 10
 
 vim.opt.signcolumn = "yes"
-vim.opt.isfname:append "@-@"
+vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 -- movements windows
@@ -65,7 +63,7 @@ vim.keymap.set("v", "<", "<gv", {})
 vim.keymap.set("v", ">", ">gv", {})
 
 -- escape terminal mode
-vim.keymap.set("t", "<C-x>", vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true))
+vim.keymap.set("t", "<leader><escape>", vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true))
 
 -- line number
 -- toggle lineNumber
@@ -108,10 +106,10 @@ vim.keymap.set("n", "<leader><A-h>", ":sp <CR>")
 -- buffers
 -- vim.keymap.set("n", "<space><space>", ":sp")
 vim.keymap.set("", "<leader>nt", ":tabnew <CR>")
-vim.keymap.set("", "<leader>Q", ":qa! <CR>")
+-- vim.keymap.set("", "<leader>Q", ":qa! <CR>")
 vim.keymap.set("", "<Tab><Tab>", "<C-~>")
-vim.keymap.set("", "<Tab>", "gT")
-vim.keymap.set("", "<S-Tab>", "gt")
+-- vim.keymap.set("", "<Tab>", "gT")
+-- vim.keymap.set("", "<S-Tab>", "gt")
 
 -- movements
 vim.keymap.set("n", "<A-l>", "e")
@@ -136,7 +134,10 @@ vim.keymap.set("i", "<C-k>", "<Esc>:m .-2<CR>==gi")
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=")
 
-vim.keymap.set({"n", "v"}, "<leader>d", '"_d')
+vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
+
+vim.keymap.set('v', "K", "{")
+vim.keymap.set('v', "J", "}")
 
 -- scroll
 vim.keymap.set("n", "J", "<C-D>")

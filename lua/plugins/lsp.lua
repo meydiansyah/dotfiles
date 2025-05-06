@@ -1,5 +1,28 @@
 return {
 	{
+		"udalov/kotlin-vim",
+		config = function()
+			local lspconfig = require("lspconfig")
+
+			lspconfig.kotlin_language_server.setup({
+				cmd = { "kotlin-language-server" },
+				capabilities = require("cmp_nvim_lsp").default_capabilities(),
+				on_attach = function(client, bufnr)
+					-- Keybindings for LSP
+					local opts = { noremap = true, silent = true }
+					--[[ vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
+					vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
+					vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) ]]
+				end,
+			})
+
+			require("nvim-treesitter.configs").setup({
+				ensure_installed = { "kotlin" },
+				highlight = { enable = true },
+			})
+		end,
+	},
+	{
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup({})
@@ -14,18 +37,12 @@ return {
 					"cssls",
 					"html",
 					"emmet_ls",
-					"ts_ls"
+					"ts_ls",
+					"gopls",
 				},
 			})
 		end,
 	},
-    {
-      "themaxmarchuk/tailwindcss-colors.nvim",
-      module = "tailwindcss-colors",
-      config = function ()
-        require("tailwindcss-colors").setup()
-      end
-    },
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
@@ -43,6 +60,9 @@ return {
 					"sass",
 					"scss",
 					"typescriptreact",
+					"vue",
+					"blade",
+					"go",
 				},
 				init_options = {
 					html = {
@@ -54,12 +74,21 @@ return {
 				},
 			})
 
+			lspconfig.gopls.setup({
+				settings = {
+					gopls = {
+						staticcheck = true,
+						gofumpt = true,
+					},
+				},
+			})
+
 			lspconfig.html.setup({
 				capabilities = lsp_capabilities,
-            })
+			})
 			lspconfig.cssls.setup({
 				capabilities = lsp_capabilities,
-            })
+			})
 
 			-- lsp lua
 			lspconfig.lua_ls.setup({
@@ -82,14 +111,15 @@ return {
 			vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
 
-            -- code actions
-            vim.keymap.set("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
+			-- code actions
+			vim.keymap.set("n", "<leader>a", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 
 			vim.keymap.set("n", "<leader><A-n>", vim.diagnostic.goto_prev, opts)
 			vim.keymap.set("n", "<leader><A-N>", vim.diagnostic.goto_next, opts)
 			vim.keymap.set("n", "<leader><leader>rn", vim.lsp.buf.rename, opts)
 
 			vim.keymap.set("n", "<space><Tab>", vim.lsp.buf.signature_help, opts)
+			vim.keymap.set("n", "<space>i", vim.lsp.buf.hover, opts)
 			vim.keymap.set("n", "<leader>wa", vim.lsp.buf.add_workspace_folder, opts)
 			vim.keymap.set("n", "<leader>wr", vim.lsp.buf.remove_workspace_folder, opts)
 			vim.keymap.set("n", "<leader>wl", function()
